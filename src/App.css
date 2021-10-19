@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+  width: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar-track {
+  background: #f1f1f1b6;
+  border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+::-webkit-scrollbar-thumb {
+  background: #f2c94c;
+}
+.app {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  background: #f2994a;
+  background: -webkit-linear-gradient(to right, #f2c94c, #f2994a);
+  background: linear-gradient(to right, #f2c94c, #f2994a);
+}
+
+.navbar {
+  height: 8vh;
+  width: 95vw;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: bisque;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: fixed;
+  left: 2.5vw;
+  border-radius: 10px;
+  padding: 10px;
+  top: 2%;
+  z-index: 100;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main {
+  height: auto;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding-top: 10vh;
 }
